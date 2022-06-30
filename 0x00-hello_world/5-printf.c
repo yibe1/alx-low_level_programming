@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
+ *This is a c program
  *main Commenting
  *
- *Return zero
+ *return zero
  */
 int main(void)
 {
