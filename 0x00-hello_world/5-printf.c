@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- *C0mmenting
- * Test
+ *main Commenting
+ *
+ *Return zero
  */
 int main(void)
 {
