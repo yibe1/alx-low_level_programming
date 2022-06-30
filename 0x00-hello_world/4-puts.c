@@ -2,7 +2,6 @@
 
 /**
  *
- *
  * Testing betty
  */
 int main(void)
