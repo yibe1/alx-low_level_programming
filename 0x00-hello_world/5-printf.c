@@ -5,8 +5,7 @@
  *
  *Description: This is a short description
  *
- *return: retrurns zero
- *
+ *Return: retrurns zero
  */
 int main(void)
 {
