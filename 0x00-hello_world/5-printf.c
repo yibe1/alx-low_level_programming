@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 /**
- *This is a c program
- *main Commenting
+ *main - Commenting
  *
- *return zero
+ *Description: This is a short description
+ *
+ *return: retrurns zero
+ *
  */
 int main(void)
 {
