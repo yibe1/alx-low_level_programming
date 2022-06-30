@@ -2,7 +2,7 @@
 
 /**
  *main- is the main func.
- * 
+ *
  *Description: begining to code in c
  *
  *Return: returns 0
