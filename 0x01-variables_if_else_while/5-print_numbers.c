@@ -12,13 +12,12 @@
 int main(void)
 {
  int i;
- char t;
+ char t[] = "0123456789/n";
  
-for( i = 0; i < 0; i++ )
+ for( i = 0; i < 10; i++ )
     {
-      t = i + '0';
-      putchar(t);
+      putchar(t[i]);
     }
 
-	return (0);
+ return (0);
 }
