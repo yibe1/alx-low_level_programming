@@ -16,8 +16,7 @@ int main(void)
 
 	for( i = 0; i < 0; i++ )
 	{
-	  char t =(char) i;
-	  printf("%s", t);
+	   printf("%d", t);
 	}
 
 	return (0);
