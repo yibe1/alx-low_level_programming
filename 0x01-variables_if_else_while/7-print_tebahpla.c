@@ -13,7 +13,7 @@ int main(void)
 {
 int i;
 char txt[] = "abcdefghijklmnopqrstuvwxyz\n";
-for (i = 27; i > 0; i--)
+for (i = 28; i > 0; i--)
 {
 putchar(txt[i]);
 }
