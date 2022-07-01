@@ -11,12 +11,14 @@
 
 int main(void)
 {
-  int i;
-
-	for( i = 0; i < 0; i++ )
-	{
-	   printf("%d", i);
-	}
+ int i;
+ char t;
+ 
+for( i = 0; i < 0; i++ )
+    {
+      t = i + '0';
+      putchar(t);
+    }
 
 	return (0);
 }
