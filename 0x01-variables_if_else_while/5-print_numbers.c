@@ -11,11 +11,13 @@
 
 int main(void)
 {
-	int i;
+  int i;
+  char t;
 
 	for( i = 0; i < 0; i++ )
 	{
-	  fwrite((char)i);
+	  char t = i + '0';
+	  printf(t);
 	}
 
 	return (0);
