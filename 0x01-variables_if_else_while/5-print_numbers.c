@@ -15,7 +15,7 @@ int main(void)
 
 	for( i = 0; i < 0; i++ )
 	{
-		write(i);
+		fwrite(i);
 	}
 
 	return (0);
