@@ -12,7 +12,7 @@
 int main(void)
 {
 int i;
-char txt[] = "\nabcdefghijklmnopqrstuvwxyz";
+char txt[] = "abcdefghijklmnopqrstuvwxyz\n";
 for (i = 27; i > 0; i--)
 {
 putchar(txt[i]);
