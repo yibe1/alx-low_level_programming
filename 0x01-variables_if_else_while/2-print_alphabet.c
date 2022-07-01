@@ -9,14 +9,14 @@
  *
  */
 
-int main()
+int main(void)
 {
 	int i;
-	char txt[] = "abcdefghijklmnopqrstuvwxyz";
-	for(i = 0; i<26; i++)
+	char txt[] = "abcdefghijklmnopqrstuvwxyz\n";
+	for (i = 0; i < 26; i++)
 	{
 		putchar(txt[i]);
 	}
 
-	return 0;
+	return (0);
 }
