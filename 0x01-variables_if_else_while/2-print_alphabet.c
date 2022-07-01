@@ -12,9 +12,9 @@
 int main(void)
 {
 	int i;
-	char txt[] = "abcdefghijklmnopqrstuvwxyz \n";
+	char txt[] = "abcdefghijklmnopqrstuvwxyz\n";
 
-	for (i = 0; i < 26; i++)
+	for (i = 0; i < 27; i++)
 	{
 		putchar(txt[i]);
 	}
