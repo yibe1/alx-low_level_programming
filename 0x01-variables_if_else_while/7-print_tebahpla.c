@@ -12,7 +12,7 @@
 int main(void)
 {
 int i;
- char txt[] = "\nabcdefghijklmnopqrstuvwx";
+ char txt[] = "\nabcdefghijklmnopqrstuvwxyz";
  
 for (i = 26; i < 0; i--)
 {
