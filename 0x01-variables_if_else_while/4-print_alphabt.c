@@ -9,7 +9,7 @@
  *
  */
 
-int main(0)
+int main(void)
 {
 	char txt[] = "abcdefghijklmnopqrstuvwxyz\n";
 
