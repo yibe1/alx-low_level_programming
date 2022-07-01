@@ -6,7 +6,7 @@
 /* betty style doc for function main goes there */
 /**
  * main- the first entry function
- * 
+ *
  * Description: Theis is a function to practice if - else
  *
  * Return: 0 for success
