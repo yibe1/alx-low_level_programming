@@ -15,9 +15,9 @@ int i;
 char t[] = "0123456789\n";
 
 for (i = 0; i < 11; i++)
-    {
-      putchar(t[i]);
-    }
+{
+putchar(t[i]);
+}
 
 return (0);
 }
