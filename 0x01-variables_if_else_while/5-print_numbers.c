@@ -12,7 +12,6 @@
 int main(void)
 {
   int i;
-  char t;
 
 	for( i = 0; i < 0; i++ )
 	{
