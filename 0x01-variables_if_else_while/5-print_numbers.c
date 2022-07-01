@@ -16,7 +16,7 @@ int main(void)
 
 	for( i = 0; i < 0; i++ )
 	{
-	  char t = i + '0';
+	  char t =(char) i;
 	  printf("%s", t);
 	}
 
