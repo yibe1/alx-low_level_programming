@@ -15,7 +15,7 @@ int main(void)
 
 	for( i = 0; i < 0; i++ )
 	{
-		printf(i);
+		write(i);
 	}
 
 	return (0);
