@@ -5,7 +5,7 @@
  *
  * Description: this program prints hexadecimal
  *
- * Retrun: returns 0 for success
+ * Return: returns 0 for success
  *
  */
 
