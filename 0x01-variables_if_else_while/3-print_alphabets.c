@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main-starting point for the program
  *
  * Description: This is a program that displays lower and upper case letters
