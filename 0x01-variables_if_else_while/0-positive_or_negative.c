@@ -9,6 +9,7 @@
  * 
  * Description: Theis is a function to practice if - else
  *
+ * Return: 0 for success
  */
 
 
