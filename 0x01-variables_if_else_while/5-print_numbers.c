@@ -11,13 +11,13 @@
 
 int main(void)
 {
-  int i;
-  char t[] = "0123456789\n";
+int i;
+char t[] = "0123456789\n";
 
-  for (i = 0; i < 11; i++)
+for (i = 0; i < 11; i++)
     {
       putchar(t[i]);
     }
 
-  return (0);
+return (0);
 }
