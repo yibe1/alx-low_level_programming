@@ -15,11 +15,12 @@ int main(void)
 
 	int i;
 
-	for (i = 0; i<26; i++)
+	for (i = 0; i < 27; i++)
 	{
-		if (txt[i] == 'q' || txt[i] == 'e') continue;
+		if (txt[i] == 'q' || txt[i] == 'e')
+			continue;
 
-		putchar( txt[i] );
+		putchar(txt[i]);
 
 	}
 	return (0);
