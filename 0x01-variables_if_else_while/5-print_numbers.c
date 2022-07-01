@@ -18,6 +18,5 @@ for (i = 0; i < 11; i++)
     {
       putchar(t[i]);
     }
-
 return (0);
 }
