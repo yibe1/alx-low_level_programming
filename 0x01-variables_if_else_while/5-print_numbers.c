@@ -16,7 +16,7 @@ int main(void)
 
 	for( i = 0; i < 0; i++ )
 	{
-	   printf("%d", t);
+	   printf("%d", i);
 	}
 
 	return (0);
