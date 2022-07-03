@@ -11,26 +11,25 @@
 
 int main(void)
 {
-int i, j;
-for (i = 0; i < 100; i++)
+int i, j, k, l;
+for (i = 0; i < 10; i++)
 {
-for (j = i + 1; j < 100; j++)
+for (j = 0; j < 10; j++)
 {
-if (i < 10)
+for (k = i; k <10; k++)
 {
-putchar('0');
-}
+for(l = j + 1; l
 putchar(i + '0');
-putchar(' ');
-if (j < 10)
-{
-putchar('0');
-}
 putchar(j + '0');
-if (i == 97 && j == 98)
+putchar(' ');
+putchar(k + '0');
+putchar(l + '0');
+if (i == 9 && j == 7 && k == 9 && l == 8)
 break;
 putchar(',');
 putchar(' ');
+}
+}
 }
 }
 putchar('\n');
