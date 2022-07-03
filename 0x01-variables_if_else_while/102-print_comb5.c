@@ -24,7 +24,7 @@ putchar(i + '0');
 putchar(j + '0');
 putchar(' ');
 if (l == 10){
-l == 0;
+l = 0;
 k++;
 }
 putchar(k + '0');
