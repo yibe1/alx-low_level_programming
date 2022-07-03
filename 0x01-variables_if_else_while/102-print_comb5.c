@@ -18,11 +18,15 @@ for (j = 0; j < 10; j++)
 {
 for (k = i; k < 10; k++)
 {
-for(l = j + 1; l <= 10; l++)
+for (l = j + 1; l <= 10; l++)
 {
 putchar(i + '0');
 putchar(j + '0');
 putchar(' ');
+if (l == 10){
+l == 0;
+k++;
+}
 putchar(k + '0');
 putchar(l + '0');
 if (i == 9 && j == 7 && k == 9 && l == 8)
