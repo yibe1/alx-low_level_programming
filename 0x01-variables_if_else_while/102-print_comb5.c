@@ -32,7 +32,7 @@ j++;
 putchar(i + '0');
 putchar(j + '0');
 putchar(' ');
-if (l == 10){
+if (l == 10 && k != 9){
 l = 0;
 k++;
 }
