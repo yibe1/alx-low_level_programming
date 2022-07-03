@@ -12,20 +12,22 @@
 int main(void)
 {
 int i, j, k, l;
-for (i = 0; i < 10; i++)
+for (i = 0; i < 100; i++)
 {
-for (j = 0; j < 10; j++)
+for (j = i + 1; j < 100; j++)
 {
-for (k = 0; k < 10; k++)
+if (i < 10)
 {
-for (l = 1; l < 10; l++)
-{
+putchar('0');
+}
 putchar(i + '0');
-putchar(j + '0');
 putchar(' ');
-putchar(k + '0');
-putchar(l + '0');
-if (i == 7 && j == 8 && k == 9)
+if (j < 10)
+{
+putchar('0');
+}
+putchar(j + '0');
+if (i == 97 && j == 98)
 break;
 putchar(',');
 putchar(' ');
