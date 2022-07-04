@@ -11,7 +11,7 @@
 
 int main(void)
 {
-  int i, j, l, k;
+int i, j, l, k;
 for (i = 0; i < 100; i++)
 {
 for (j = i + 1; j < 100; j++)
@@ -19,14 +19,14 @@ for (j = i + 1; j < 100; j++)
 l = i / 10;
 k = i % 10;
 putchar(l + '0');
-putchar(k + '0'); 
+putchar(k + '0');
 putchar(' ');
 l = j / 10;
 k = j % 10;
 putchar(l + '0');
-putchar(k + '0'); 
+putchar(k + '0');
 
-if (i == 97 && j == 98)
+if (i == 98 && j == 99)
 break;
 putchar(',');
 putchar(' ');
