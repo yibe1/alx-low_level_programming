@@ -11,16 +11,20 @@
 
 int main(void)
 {
-int i, j;
+  int i, j, l, k;
 for (i = 0; i < 100; i++)
 {
-for (j = 0; j < 100; j++)
+for (j = i + 1; j < 100; j++)
 {
-putchar(i[0] + '0');
-putchar(i[1] + '0'); 
+l = i / 10;
+k = i % 10;
+putchar(l + '0');
+putchar(k + '0'); 
 putchar(' ');
-putchar(j[0] + '0');
-putchar(j[1] + '0');
+l = j / 10;
+k = j % 10;
+putchar(l + '0');
+putchar(k + '0'); 
 
 if (i == 97 && j == 98)
 break;
