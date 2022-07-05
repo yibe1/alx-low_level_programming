@@ -14,11 +14,10 @@ int main(void)
 {
 char ch[] = "_putchar\n";
 int i, n;
-n = (int) sizeof(ch);
+n = (int) sizeof(ch) - 1;
 for (i = 0; i < n; i++)
 {
 putchar(ch[i]);
 }
-putchar('\n');
 return (0);
 }
