@@ -13,13 +13,10 @@
 
 int print_last_digit(int x)
 {
-int t, n;
-if (x < 0)
-t = x * -1;
-else
-t = x;
-
+char t[] = x + '0';
+int n;
+n = sizeof(t);
 n = t % 10;
-_putchar(n + '0');
+_putchar(t[n-1]);
 return (n);
 }
