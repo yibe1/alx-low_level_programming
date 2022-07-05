@@ -13,10 +13,15 @@
 
 int print_last_digit(int x)
 {
-int n;
-n = log10(x) + 1;
-char s[n]; 
-sprintf(s,"%ld", i);
-_putchar(s[n-1]);
-return (s[n-1]);
+int last;
+
+last = n % 10;
+
+if (last < 0)
+{
+last = last * -1;
+}
+
+_putchar(last + '0');
+return (last);
 }
