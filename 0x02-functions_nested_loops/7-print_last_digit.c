@@ -13,7 +13,8 @@
 
 int print_last_digit(int x)
 {
-char t[] = x + '0';
+char t[];
+t = x + '0'; 
 int n;
 n = sizeof(t);
 n = t % 10;
