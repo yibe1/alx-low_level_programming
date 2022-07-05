@@ -18,7 +18,8 @@ if (x < 0)
 t = x * -1;
 else
 t = x;
-int n = t % 10;
+int n;
+n = t % 10;
 putchar(n + '0');
 return(n);
 }
