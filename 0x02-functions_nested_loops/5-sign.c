@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_sign - prints the function that returns the result
  *
@@ -14,17 +14,17 @@ int print_sign(int n)
 int r;
 if (n > 0)
 {
-putchar('+');
+_putchar('+');
 r = 1;
 }
 if (n == 0)
 {
-putchar('0');
+_putchar('0');
 r = 0;
 }
 if (n < 0)
 {
-putchar('-');
+_putchar('-');
 r = -1;
 }
 
