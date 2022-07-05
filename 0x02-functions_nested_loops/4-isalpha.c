@@ -1,5 +1,5 @@
 /**
- * _islower-function that checks for lowercase
+ * _isalpha - function that checks for lowercase
  *@c: the character to be checked
  * Description: the function checks for small letter
  *
