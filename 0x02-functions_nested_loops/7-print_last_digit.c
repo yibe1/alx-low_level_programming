@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print_last_digit - function that works on returning the last digit of a number
+ * print_last_digit-function that works on returning the last digit
  * Description: will take a number and return the last digit of a number
  * @x: will the number input to the function
  *
@@ -20,6 +20,6 @@ else
 t = x;
 
 n = t % 10;
-putchar(n + '0');
-return(n);
+_putchar(n + '0');
+return (n);
 }
