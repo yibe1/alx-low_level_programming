@@ -13,8 +13,9 @@
 int main(void)
 {
 char ch[] = "_putchar\n";
-int i;
-for (i = 0; i < sizeof(ch); i++)
+int i, n;
+n =(int) sizeof(ch);
+for (i = 0; i < n; i++)
 {
 putchar(ch[i]);
 }
