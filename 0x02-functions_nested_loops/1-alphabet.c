@@ -1,21 +1,6 @@
 #include <stdio.h>
 
 /**
- * main-start of program
- *
- * Description: using prototypes
- *
- * Return: return 0 for success
- *
- */
-
-int main(void)
-{
-print_alphabet();
-return 0;
-}
-
-/**
  * print_alphabet-start of program
  *
  * Description: using prototypes
