@@ -1,4 +1,4 @@
-#include "_putchar.h"
+#include "holberton.h"
 
 /**
  * print_last_digit-function that works on returning the last digit
