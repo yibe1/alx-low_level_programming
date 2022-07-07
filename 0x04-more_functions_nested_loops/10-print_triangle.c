@@ -16,7 +16,7 @@ int i, j, k;
 for (i = 0; i < size; i++)
 {
 
-for (k = 0; k < size - i + 1; k++)
+for (k = 0; k < size - i; k++)
 {
 _putchar(' ');
 }
@@ -27,5 +27,5 @@ _putchar('#');
 
 _putchar('\n');
 }
-
+_putchar('\n');
 }
