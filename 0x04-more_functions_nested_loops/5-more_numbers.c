@@ -12,7 +12,7 @@
 void more_numbers(void)
 {
 int i = 0;
- int j, t1, t2;
+int j, t2;
  
 while (i < 10)
 {
