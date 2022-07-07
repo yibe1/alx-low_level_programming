@@ -21,6 +21,7 @@ _putchar(j + '0');
 j++
 }
 i++;
+_putchar('\n');
 }
 _putchar('\n');
 }
