@@ -8,7 +8,7 @@
  */
 
 
-int _islower(int c)
+int _isupper(int c)
 {
 if (c >= 65 && c <= 90)
 {
