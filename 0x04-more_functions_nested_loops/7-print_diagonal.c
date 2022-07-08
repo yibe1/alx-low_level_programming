@@ -3,7 +3,7 @@
  * print_diagonal-function to print triangle
  *
  * Description: ...
- * @n: size of triangle
+ * @size: size of triangle
  *
  * Return: nothing
  *
@@ -11,17 +11,16 @@
 
 void print_diagonal(int n)
 {
-
 int i, k;
 for (i = 0; i < n; i++)
 {
 for (k = 0; k < i; k++)
 {
-_putchar(' ');
+putchar(' ');
 }
-_putchar('\\');
+putchar('\\');
 
-_putchar('\n');
+putchar('\n');
 }
-_putchar('\n');
+putchar('\n');
 }
