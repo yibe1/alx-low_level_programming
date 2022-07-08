@@ -10,7 +10,7 @@
 
 int main(void)
 {
-int i, p = 2, N = 612852475143;
+unsigned long int i, N = 612852475143;
 for (i = N-1; i > 0; i--)
 {
 if (N % i == 0)
