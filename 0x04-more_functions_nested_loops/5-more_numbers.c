@@ -18,7 +18,7 @@ while (i < 10)
 {
 for (j = 0; j < 15; j++)
 {
-if (j > 10)
+if (j > 9)
 j = j / 10;
 _putchar(j + '0');
 if (j > 9)
