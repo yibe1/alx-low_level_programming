@@ -22,9 +22,7 @@ int i,leap;
 
 leap = year % 4 == 0 && year%100 != 0 || year%400 == 0;
 
-if (year < 1 || month < 1 || month > 12 || day < 1 || day > daytab[leap][month])
-return -1;
-for(i=1;i<month;i++)
+for(i = 1; i < month; i++)
 day += daytab[leap][i];
     
 printf("Day of the year: %d\n", day);
