@@ -3,7 +3,7 @@
  * print_diagonal-function to print triangle
  *
  * Description: ...
- * @size: size of triangle
+ * @n: size of triangle
  *
  * Return: nothing
  *
