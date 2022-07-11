@@ -11,11 +11,8 @@
 int _strlen(char *s)
 {
 int n;
-while (true)
+while (arr(*s + n) != '\0')
 {
-if (arr(*s + n) == '\0')
-break;
-else
 n++;
 }
 return (n);
