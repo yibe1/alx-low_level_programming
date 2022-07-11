@@ -18,7 +18,7 @@ while (str[n] != '\0')
 n++;
 }
 j = n - 1;
-c = j/2;
+c = j / 2;
 while (i < c)
 {
 t = str[j];
