@@ -18,7 +18,7 @@ if (n % 2 != 0)
 n++;
 continue;
 }
-_putchar(str[n]);  
+_putchar(str[n]);
 n++;
 }
 _putchar('\n');
