@@ -18,7 +18,7 @@ n++;
 
 while (n >= 0)
 {
-_putchar(str[n-1]);
+_putchar(str[n - 1]);
 n--;
 }
 _putchar('\n');
