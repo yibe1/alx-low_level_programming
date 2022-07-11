@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * puts2-str length
+ * puts_half-str length
  * @str:first char
  *
  * Return: return string length
  *
  */
 
-void puts2(char *str)
+void puts_half(char *str)
 {
 int i = 0, n;
  
