@@ -17,13 +17,13 @@ while (str[n] != '\0')
 {
 n++;
 }
- j = n - 1;
- c = n/2;
+j = n - 1;
+c = n/2;
 while (i < c)
 {
 t = str[j];
 str[j] = str[i];
-str[i] = t
+str[i] = t;
 j--;
 i++;
 }
