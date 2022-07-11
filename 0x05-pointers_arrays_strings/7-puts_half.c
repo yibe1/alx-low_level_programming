@@ -24,6 +24,7 @@ else
 {
 n = (i - 1) / 2;
 }
+n++;
 while (n < i)
 {
 _putchar(str[n]);
