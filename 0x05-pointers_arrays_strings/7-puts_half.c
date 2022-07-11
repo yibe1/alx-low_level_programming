@@ -19,12 +19,12 @@ i++;
 if (i % 2 == 0)
 {
 n = i / 2;
+n++;
 }
 else
 {
 n = (i - 1) / 2;
 }
-n++;
 while (n < i)
 {
 _putchar(str[n]);
