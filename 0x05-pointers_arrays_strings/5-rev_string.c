@@ -15,18 +15,14 @@ while (str[n] != '\0')
 {
 n++;
 }
-char ch[n];
+
 int i = 0;
+char t;
 while (i < n)
 {
-ch[i] = str[i];
+t = str[i];
+str[n - i] = t;
 i++;
-}
-
-while (n > 0)
-{
-*str = ch[n];
-n--;
 }
 _putchar('\n');
 }
