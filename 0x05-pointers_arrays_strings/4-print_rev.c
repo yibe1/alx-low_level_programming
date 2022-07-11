@@ -16,10 +16,10 @@ while (str[n] != '\0')
 n++;
 }
 
-while (n >= 0)
+while (n > 0)
 {
 _putchar(str[n - 1]);
 n--;
 }
-
+_putchar('\n');
 }
