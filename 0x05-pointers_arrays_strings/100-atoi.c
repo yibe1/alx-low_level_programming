@@ -1,5 +1,5 @@
+#include <stdio.h>
 /**
- *
  * _atoi-convert char to int
  * @s: string to be converted
  *
@@ -25,6 +25,7 @@ if (s[i] == 45 || s[i] == 43)
 sign = sign * s[i];
 continue;
 }
+
 if(s[i] >= 48 && s[i] <=57)
 {
 switch (s[i])
