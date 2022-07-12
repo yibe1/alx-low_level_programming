@@ -17,7 +17,7 @@ while (str[i] != '\0')
 if (i == n)
 break;
 printf(", ");
-printf(str[i] + '0');
+printf("%d", str[i]);
 i++;
 }
 }
