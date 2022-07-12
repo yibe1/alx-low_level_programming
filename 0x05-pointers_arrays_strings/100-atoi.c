@@ -33,31 +33,31 @@ case '0':
 num = num + (0 * base);
 break;
 case '1':
-num = num + (0 * base);
+num = num + (1 * base);
 break;
 case '2':
-num = num + (0 * base);
+num = num + (2 * base);
 break;
 case '3':
-num = num + (0 * base);
+num = num + (3 * base);
 break;
 case '4':
-num = num + (0 * base);
+num = num + (4 * base);
 break;
 case '5':
-num = num + (0 * base);
+num = num + (5 * base);
 break;
 case '6':
-num = num + (0 * base);
+num = num + (6 * base);
 break;
 case '7':
-num = num + (0 * base);
+num = num + (7 * base);
 break;
 case '8':
-num = num + (0 * base);
+num = num + (8 * base);
 break;
 case '9':
-num = num + (0 * base);
+num = num + (9 * base);
 break;
 }
 }else
