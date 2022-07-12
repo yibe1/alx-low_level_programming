@@ -63,5 +63,5 @@ break;
 continue;
 i++;
 }
-return (sum);
+return (num);
 }
