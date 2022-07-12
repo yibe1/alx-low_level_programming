@@ -11,8 +11,8 @@
 void print_array(int *str, int n)
 {
 int i = 1;
-printf(str[0]);
-while (str[i] + '0' != '\0')
+ printf("%d", str[0]);
+while (str[i] != '\0')
 {
 if (i == n)
 break;
