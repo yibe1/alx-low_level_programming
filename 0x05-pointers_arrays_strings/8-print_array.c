@@ -11,7 +11,7 @@
 void print_array(char *str, int n)
 {
 int i = 1;
- printf(str[0] + '0';
+printf(str[0] + '0');
 while (str[i] != '\0')
 {
 if (i == n)
