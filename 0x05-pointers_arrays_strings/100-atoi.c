@@ -16,6 +16,7 @@ while (s[n] != '\0')
 n++;
 base = base * 10;
 }
+base = base / 10;
 while (i < n)
 {
 base = base/10;
