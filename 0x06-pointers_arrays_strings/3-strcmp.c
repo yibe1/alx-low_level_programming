@@ -18,7 +18,7 @@ if (s1[j] == s2[j])
 j++;
 continue;
 }
-else if (src[j] < s2[j])
+else if (s1[j] < s2[j])
 {
 return (-1);
 }
