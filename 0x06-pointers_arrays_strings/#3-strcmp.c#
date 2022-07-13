@@ -23,5 +23,10 @@ c2 = c2 + s2[j];
 j++;
 }
 
-return (c1 - c2);
+if (c1 > c2)
+return ();
+else if (c1 == c2)
+return (0);
+else
+return (-1);
 }
