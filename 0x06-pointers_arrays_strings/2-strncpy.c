@@ -19,7 +19,10 @@ if (src[j] == '\0' || lock == 1)
 dest[j] = '\0';
 lock = 1;
 }
+else
+{
 dest[j] = src[j];
+}
 j++;
 
 }
