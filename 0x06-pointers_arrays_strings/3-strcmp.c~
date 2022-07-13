@@ -1,0 +1,30 @@
+/**
+ * _strcmp-concatenating strings
+ *@s1: var1
+ *@s2:sdf
+ *
+ * Return: char
+ *
+ */
+
+char *_strcmp(char *s1, char *s2)
+{
+int j = 0, lock = 0;
+
+while (j < n)
+{
+if (src[j] == '\0' || lock == 1)
+{
+dest[j] = '\0';
+lock = 1;
+}
+else
+{
+dest[j] = src[j];
+}
+j++;
+
+}
+
+return (dest);
+}
