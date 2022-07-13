@@ -1,5 +1,5 @@
 /**
- * _strcmp-concatenating strings
+ * reverse_array-concatenating strings
  *@a: var1
  *@n:sdf
  *
@@ -9,7 +9,7 @@
 
 void reverse_array(int *a, int n)
 {
-  int i = 0, mid, t;
+int i = 0, mid, t;
 mid = n / 2;
 while (i < mid)
 {
