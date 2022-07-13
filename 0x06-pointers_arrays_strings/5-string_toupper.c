@@ -17,5 +17,5 @@ a[i] = a[i] - 32;
 }
 i++;
 }
-return (*a);
+return (a);
 }
