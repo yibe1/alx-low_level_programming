@@ -17,7 +17,6 @@ while (j < n)
 if (src[j] == '\0')
 {
 dest[j] = '\0';
-break;
 }
 dest[j] = src[j];
 j++;
