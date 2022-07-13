@@ -13,7 +13,7 @@ int j = 0;
 
 while (s1[j] != '\0' || s2[j] != '\0')
 {
-if (src[j] == s2[j])
+if (s1[j] == s2[j])
 {
 j++;
 continue;
