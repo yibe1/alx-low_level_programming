@@ -16,13 +16,17 @@ while (1 == 1)
 {
 if (dest[i] == '\0')
 {
-while (j < n || src[j] != '\0')
+while (j < n)
 {
+if (src[j] == '\0')
+{
+i++;
+break;
+}
 dest[i] = src[j];
 i++;
 j++;
-if (src[j] == '\0')
-break;
+
 }
 dest[i] = '\0';
 break;
