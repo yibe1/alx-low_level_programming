@@ -16,5 +16,7 @@ while (i < mid)
 t = a[i];
 a[i] = a[n - 1];
 a[n - 1] = t;
+i++;
+n--;
 }
 }
