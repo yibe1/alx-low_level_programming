@@ -1,12 +1,12 @@
 /**
- * leet-concatenating strings
+ * rot13-concatenating strings
  *@a: var1
  *
  * Return: char
  *
  */
 
-char *leet(char *a)
+char *rot13(char *a)
 {
 int i = 0, j;
 char ar1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
