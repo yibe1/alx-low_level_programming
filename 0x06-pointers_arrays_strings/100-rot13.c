@@ -19,6 +19,7 @@ for (j = 0; j < 52; j++)
 if (a[i] == ar1[j])
 {
 a[i] = ar2[j];
+break;
 }
 i++;
 }
