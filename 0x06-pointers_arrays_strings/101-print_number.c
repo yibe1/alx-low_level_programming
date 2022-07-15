@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  *print_number-prints number
  *@n:number to be printed
@@ -20,7 +20,7 @@ while (i > 1)
 {
 j = n / i;
 n = n % i;
-_putchar(j + '0');
+putchar(j + '0');
 i = i / 10;
 }
 putchar(n + '0');
