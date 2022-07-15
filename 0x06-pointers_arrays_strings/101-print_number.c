@@ -11,7 +11,7 @@ void print_number(int n)
 {
 int t = n;
 int i = 1, j;
-if(n < 0)
+if (n < 0)
 {
 n = n * -1;
 t = n;
