@@ -20,7 +20,7 @@ while (i > 1)
 {
 j = n / i;
 n = n % i;
-putchar(j + '0');
+_putchar(j + '0');
 i = i / 10;
 }
 putchar(n + '0');
