@@ -17,11 +17,12 @@ n = n * -1;
 t = n;
 _putchar('-');
 }
-while (t > 10)
+while (t > 0)
 {
 t = t / 10;
 i = i * 10;
 }
+i = i / 10;
 while (i > 1)
 {
 j = n / i;
