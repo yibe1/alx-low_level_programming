@@ -9,25 +9,19 @@ include "main.h"
 
 void print_number(int n)
 {
-int i = 0, j;
-char *p;
-while (1 == 1)
+int t = n;
+int i = 1, j;
+while (t > 10)
 {
-if (n / 10 > 1)
+t = t / 10;
+i = i * 10;
+}
+while (i > 1)
 {
-p[i] = n % 10 + '0';
-n = n / 10;
+j = n / i;
+n = n % i;
+putchar(j + '0');
+i = i / 10;
 }
-else
-{
-p[i] = n + '0';
-break;
-}
-i++;
-}
-while (i >= 0)
-{
-_putchar(p[i]);
-i--;
-}
+putchar(n + '0');
 }
