@@ -1,0 +1,15 @@
+#include "main.h"
+/**
+ *_memset-sets memory
+ *@s:char
+ *@b:char
+ *@n:size
+ *
+ *Return: char
+ *
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+  
+}
