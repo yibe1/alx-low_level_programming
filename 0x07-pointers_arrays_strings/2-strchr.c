@@ -8,7 +8,7 @@
  * @c: ....
  *
  * Return: a pointer 
- * @s. return ....
+ *
  */
 
 char *_strchr(char *s, char c)
@@ -18,7 +18,7 @@ char *ch;
 
 while (s[i] != '\0')
 {
-if (s[i] != 'c')
+if (s[i] != c)
 i++;
 else
 {
