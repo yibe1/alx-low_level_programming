@@ -7,7 +7,7 @@
  * @s: string
  * @c: ....
  *
- * Return: a pointer 
+ * Return: a pointer
  *
  */
 
@@ -26,5 +26,7 @@ ch = &s[i];
 return (ch);
 }
 }
+if (s[i] == c)
+return (ch);
 return (NULL);
 }
