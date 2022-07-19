@@ -27,6 +27,9 @@ return (ch);
 }
 }
 if (s[i] == c)
+{
+ch = &s[i];
 return (ch);
+}
 return (NULL);
 }
