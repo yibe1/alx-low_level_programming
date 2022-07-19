@@ -24,5 +24,6 @@ else
 c = &s[i];
 return (c);
 }
+}
 return (NULL);
 }
