@@ -1,26 +1,29 @@
+#include <stdio.h>
 #include "main.h"
 /**
- * print_chessboard -.......
+ * print_diagsums -....
  *
- * @a:...
+ * @a: ..
+ * @size: ..
  *
- * Return: nothig
+ * Return: nothing
  */
 
-void print_chessboard(char (*a)[8])
+void print_diagsums(int *a, int size)
 {
-int i, j;
-for (i = 0; i < 8; i++)
+int i = 0;
+int j = size - 1;
+int sum1 = 0;
+int sum2 = 0;
+while (i <= (size * size))
 {
-for (j = 0; j < 8; j++)
-{
-if (j == 7)
-{
-_putchar(a[i][j]);
-_putchar('\n');
+sum1 = sum1 + a[i];
+i = i + size + 1;
 }
-else
-_putchar(a[i][j]);
+while (j < (size * size - 1))
+{
+sum2 += a[j];
+j = j + size - 1;
 }
-}
+printf("%d, %d\n", sum1, sum2);
 }
