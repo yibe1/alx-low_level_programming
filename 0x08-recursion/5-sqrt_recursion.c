@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sqrt_check - .............
+ * test - .............
  * @g:.......
  * @c: .........
  *
@@ -13,7 +13,7 @@ if (g * g == c)
 return (g);
 if (g * g > c)
 return (-1);
-return (sqrt_check(g + 1, c));
+return (test(g + 1, c));
 }
 
 /**
