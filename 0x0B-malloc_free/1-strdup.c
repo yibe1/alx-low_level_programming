@@ -22,7 +22,7 @@ for (a = 0; str[a] != '\0'; a++)
 {
 }
 size = a + 1;
-ptr = malloc(size * sizeof(char));
+ptr = malloc(size *sizeof(char));
 x = 0;
 while (x < size)
 {
