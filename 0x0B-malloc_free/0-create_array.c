@@ -5,14 +5,15 @@
 
 /**
  * create_array - create
- * @size: 
+ * @size:
  * @c: char type
+ * 
  * Return: Return
  */
 
 char *create_array(unsigned int size, char c)
 {
-char *s;
+char *size;
 unsigned int i;
 
 if (size == 0)
