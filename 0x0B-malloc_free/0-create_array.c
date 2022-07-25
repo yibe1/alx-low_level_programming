@@ -4,9 +4,9 @@
 
 /**
  * create_array - create
- * @s:
+ * @size: ............
  * @c: char type
- * 
+ *
  * Return: Return
  */
 
