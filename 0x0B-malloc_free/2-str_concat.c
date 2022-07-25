@@ -10,13 +10,15 @@
  * @n: int type for size of byte
  * Return: dest
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncat(char *dt, char *src, int n)
 {
-int dest_len, a;
-dest_len = _strlen(dest);
+int dt_len, a;
+for (a = 0; s1[a] != '\0'; a++)
+;
+dt_len = a;
 for (a = 0; a < n && src[a] != '\0'; a++)
-dest[dest_len + a] = src[a];
-return (dest);
+dt[dt_len + a] = src[a];
+return (dt);
 }
 
 /**
