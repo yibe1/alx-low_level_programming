@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 /**
  * create_array - create
  * @s:
@@ -11,16 +10,15 @@
  * Return: Return
  */
 
-char *create_array(unsigned int s, char c)
+char *create_array(unsigned int size, char c)
 {
-char *size;
+char *s;
 unsigned int i;
 
 if (size == 0)
 {
 return (NULL);
 }
-
 s = malloc((size) * sizeof(char));
 if (s == NULL)
 {
