@@ -13,7 +13,7 @@
 char *_strncat(char *dt, char *src, int n)
 {
 int dt_len, a;
-for (a = 0; s1[a] != '\0'; a++)
+for (a = 0; dt[a] != '\0'; a++)
 ;
 dt_len = a;
 for (a = 0; a < n && src[a] != '\0'; a++)
