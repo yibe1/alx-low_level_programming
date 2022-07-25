@@ -5,13 +5,13 @@
 
 /**
  * create_array - create
- * @size:
+ * @s:
  * @c: char type
  * 
  * Return: Return
  */
 
-char *create_array(unsigned int size, char c)
+char *create_array(unsigned int s, char c)
 {
 char *size;
 unsigned int i;
