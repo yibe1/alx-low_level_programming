@@ -5,7 +5,7 @@
 /**
  * _strncat - function to concatnate strings with n bytes
  *
- * @dest: destination for concatnation
+ * @dt: destination for concatnation
  * @src: source of string
  * @n: int type for size of byte
  * Return: dest
