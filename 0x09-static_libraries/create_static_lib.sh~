@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in *.c
+do
+  gcc -c $i
+    done
