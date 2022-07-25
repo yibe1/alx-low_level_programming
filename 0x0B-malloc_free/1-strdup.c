@@ -18,7 +18,7 @@ if (str == NULL)
 {
 return (NULL);
 }
-for (a = 0; s[a] != '\0'; a++)
+for (a = 0; str[a] != '\0'; a++)
 {
 }
 size = a + 1;
