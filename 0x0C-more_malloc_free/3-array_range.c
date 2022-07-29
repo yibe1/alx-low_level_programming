@@ -6,7 +6,7 @@
 /**
  * *array_range - make  memory
  * @min: int
- * @max: int 
+ * @max: int
  * Return:  return pointer
  */
 
