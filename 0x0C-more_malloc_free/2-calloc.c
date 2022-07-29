@@ -5,7 +5,7 @@
 /**
  * *_calloc - allocates memory
  * @nmemb: unsigned int
- * @size: unsigned int 
+ * @size: unsigned int
  * Return: return pointer
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
