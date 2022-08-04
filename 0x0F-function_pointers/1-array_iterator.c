@@ -17,5 +17,3 @@ if (array && action)
 for (i = 0; i < size; i++)
   (*action)(array[i]);
 }
-
-alx-low_level_programming
