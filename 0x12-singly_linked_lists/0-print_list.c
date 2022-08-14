@@ -14,7 +14,6 @@
 
 int print_list(const list_t *h)
 {
-
 const list_t *node;
 int i = 0;
 node = h;
@@ -27,7 +26,6 @@ printf("%s", str);
 node = node->next;
 printf("\n");
 i++;
-
 }
 return (i);
 }
