@@ -19,7 +19,7 @@ while (node != NULL)
 {
 char *str = node->str;
 printf("[%d] ", node->len);
-if(str == NULL)
+if (str == NULL)
 printf("(nil)");
 else
 printf("%s", str);
