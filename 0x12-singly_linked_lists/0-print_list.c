@@ -8,7 +8,7 @@
  * print_list - traverse and print linked list contents
  * @h:a starting head of a linked list
  *
- * Description: a function that traversess through singly linked list
+ * Description: a function that traverses through singly linked list
  * Return: the size of the linked list
  */
 
