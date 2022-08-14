@@ -21,6 +21,9 @@ while (node != NULL)
 {
 char *str = node->str;
 printf("[%d] ", node->len);
+if(str == NULL)
+printf("(nil)");
+else
 printf("%s", str);
 node = node->next;
 printf("\n");
