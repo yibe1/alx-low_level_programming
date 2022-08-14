@@ -14,7 +14,7 @@
 
 int print_list(const list_t *h){
 
-list_t *node;
+const list_t *node;
 int i=0;
 node = h;
 do{
