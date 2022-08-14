@@ -15,15 +15,15 @@
 int print_list(const list_t *h){
 
 const list_t *node;
-int i=0;
+int i = 0;
 node = h;
-do{
+while(node != NULL){
 printf("[%d] ",node->len);
 printf("%s",node->str);
 node = node->next;
-printf("\n");
+printf("\n"); 
 i++;
-}while(node !=NULL);
+}
 return i;
 }
 /*int main(void)
