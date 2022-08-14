@@ -18,14 +18,14 @@ const list_t *node;
 int i = 0;
 node = h;
 while(node != NULL){
-char *str = node->str;
-printf("[%d] ",node->len);
- if(str != NULL){
-printf("%s",str);
+char *str = node -> str;
+printf("[%d] ",node -> len);
+if(str != NULL)
+printf("%s", str);
 node = node->next;
 printf("\n");
 i++;
-}
+
 }
 return i;
 }
