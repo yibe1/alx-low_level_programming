@@ -10,6 +10,7 @@
  * Description: a function that traverses through singly linked list
  * Return: the size of the linked list
  */
+
 size_t print_list(const list_t *h)
 {
 size_t nodes = 0;
