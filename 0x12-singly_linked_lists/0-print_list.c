@@ -26,6 +26,7 @@ printf("(nil)");
 else
 {
 printf("%s", str);
+}
 node = node->next;
 printf("\n");
 i++;
