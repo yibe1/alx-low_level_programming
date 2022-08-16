@@ -15,12 +15,10 @@ if (h != NULL)
 {
 while (h)
 {
-if (h->n != NULL)
 printf("%d\n", h->n);
 h = h->next;
 count++;
 }
 }
-
 return (count);
 }
