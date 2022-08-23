@@ -30,7 +30,7 @@ base *= 2;
 return (uint);
 }
 /**
- * _strlen - a function 
+ * _strlen - a function
  * @s: the string to check
  *
  * Return: the length of the string
