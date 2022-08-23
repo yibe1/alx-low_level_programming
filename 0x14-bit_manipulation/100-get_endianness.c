@@ -4,7 +4,7 @@
  * get_endianness - Checks the endianness.
  *
  * Return: If big-endian - 0.
- * 
+ *
  */
 int get_endianness(void)
 {
