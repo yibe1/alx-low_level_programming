@@ -4,7 +4,7 @@ int _strlen(const char *s);
 
 /**
  * binary_to_uint - a function
- * @b: a pointer to a string 
+ * @b: a pointer to a string
  *
  * Return: the converted number, or 0 if there is one or more chars in the
  */
