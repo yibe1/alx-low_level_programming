@@ -1,36 +1,33 @@
-#include "main.h"
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <fcntl.h>
+#include <sys/uio.h>
 #include <unistd.h>
+#include <fcntl.h>
 
 /**
- * create_file - Creates a file.
- * @filename: A pointer to the name.
- * @text_content: A pointer to a string
+ * create_file - A function
+ * @filename: The filename
+ * @text_content: A NULL teminated string
+ * Return: 1 or 1
  *
- * Return: .
  */
 int create_file(const char *filename, char *text_content)
 {
-	int o, w, len = 0;
+int fdo, fdw, len = 0;
 
-	if (filename == NULL)
-		return (-1);
+if (filename == NULL)
+return (-1);
 
-	if (text_content != NULL)
-	{
-		for (len = 0; text_content[len];)
-			len++;
-	}
+fdo = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
+if (fdo < 0)
+return (-1);
 
-	o = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	w = write(o, text_content, len);
+while (text_content && *(text_content + len))
+len++;
 
-	if (o == -1 || w == -1)
-		return (-1);
-
-	close(o);
-
-	return (1);
+fdw = write(fdo, text_content, len);
+close(fdo);
+if (fdw < 0)
+return (-1);
+return (1);
 }
