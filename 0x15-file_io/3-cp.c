@@ -1,111 +1,60 @@
 #include "main.h"
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <stdlib.h>
-#include <stdio.h>
-
 
 /**
- * main - This program copies the content of one file into another
- * @ac: argument count.
- * @av: argoument values.
- *
- * Return: 0 (SUCCESS)
+ * err_status - prints error
+ * @msg: message to write
+ * @file: file to write to
+ * @exitstat: exit status given
  */
-int main(int ac, char *av[])
+void err_status(char *msg, char *file, int exitstat)
 {
-int fd_0, fd_1, rd_len, err;
-char *buf, *file_from, *file_to;
+dprintf(STDERR_FILENO, "%s%s\n", msg, file);
+exit(exitstat);
+}
+/**
+ * main - copies to file two
+ * @ac: number of arguments passed
+ * @av: pointer to list of passed strings
+ * Return: 1 on success
+ */
+int main(int ac, char **av)
+{
+ssize_t file_d_write, file_d_read, read_bytes, write_bytes;
+int isbig = 1;
 
-buf = NULL;
-rd_len = 1;
+char buf[1024];
+
 if (ac != 3)
-{
-dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-exit(97);
-}
-file_from = av[1];
-file_to = av[2];
-fd_0 = open(file_from, O_RDONLY);
-fd_1 = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-while (rd_len > 0)
-{
-rd_len = read_file(file_from, &buf, fd_0);
-if (!rd_len)
-break;
-write_copy(file_to, fd_1, buf, rd_len);
-}
+err_status("Usage: cp file_from file_to", "", 97);
 
-free(buf);
-err = close(fd_0);
-if (err < 0)
+file_d_write = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+if (file_d_write == -1)
+err_status("Error: Can't write to ", av[2], 99);
+
+file_d_read = open(av[1], O_RDONLY);
+if (file_d_read == -1)
+err_status("Error: Can't read from file ", av[1], 98);
+while (isbig)
 {
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_0);
+read_bytes = read(file_d_read, buf, 1024);
+if (read_bytes == -1)
+err_status("Error: Can't read from file ", av[1], 98);
+write_bytes = write(file_d_write, buf, read_bytes);
+if (write_bytes == -1 || write_bytes != read_bytes)
+err_status("Error: Can't write to ", av[2], 99);
+
+if (write_bytes != 1024)
+isbig = 0;
+}
+if (close(file_d_read))
+{
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", (int)file_d_read);
 exit(100);
 }
-err = close(fd_1);
-if (err < 0)
+if (close(file_d_write))
 {
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_1);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", (int)file_d_write);
 exit(100);
 }
 return (0);
-}
-/**
- * read_file - 
- * @file:
- * @buf: pointer to a pointer of a buffer.
- * @fd: file descriptors
- *
- * Return: the current size of the buffer.
- */
-static ssize_t read_file(char *file, char **buf, int fd)
-{
-int rd_len;
-
-if (fd < 0)
-{
-dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file);
-exit(98);
-}
-if (!(*buf))
-*buf = malloc(sizeof(char) * BUFSIZE);
-if (!(*buf))
-{
-dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file);
-exit(98);
-}
-rd_len = read(fd, *buf, BUFSIZE);
-if (rd_len < 0)
-{
-free(*buf);
-dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file);
-exit(98);
-}
-return (rd_len);
-}
-
-/**
- * write_copy - write the buffer to a file.
- * @file: destination for contents in buffer
- * @fd: file descriptors for the @file
- * @buf: pointer to a buffer
- * @len: current size of the buffer.
- */
-static void write_copy(char *file, int fd, char *buf, int len)
-{
-if (fd < 0 || !buf)
-{
-free(buf);
-dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
-exit(99);
-}
-if (write(fd, buf, len) < 0)
-{
-free(buf);
-dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
-exit(99);
-}
 }
