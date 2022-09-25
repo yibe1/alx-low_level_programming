@@ -4,7 +4,7 @@ int _strlen(const char *s);
 
 /**
  * binary_to_uint - a function
- * @b: a pointer to a string 
+ * @b: a pointer to a string
  *
  * Return: the converted number, or 0 if there is one or more chars in the
  */
@@ -30,7 +30,7 @@ base *= 2;
 return (uint);
 }
 /**
- * _strlen - a function 
+ * _strlen - a function
  * @s: the string to check
  *
  * Return: the length of the string
@@ -39,7 +39,7 @@ int _strlen(const char *s)
 {
 int i;
 for (i = 0; s[i] != '\0'; i++)
-		;
+;
 
 return (i);
 }
